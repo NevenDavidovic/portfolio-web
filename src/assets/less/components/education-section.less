@@ -1,0 +1,103 @@
+@import "../main/main.less";
+
+.education-section {
+  background-color: @primaryBackgroundColor;
+  margin: 0;
+  padding: 100px 16px;
+
+  .education-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .education-desc {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      h1 {
+        font-size: @titleFontSize;
+        color: @primaryTextColor;
+        span {
+          color: @secundaryTextColor;
+        }
+      }
+      p {
+        color: @normalTextColor;
+        font-size: @normalTextFontSize;
+        max-width: 500px;
+      }
+    }
+    .education-cards {
+      .flex-container();
+      width: 100%;
+      gap: 30px;
+      @media (max-width: 1100px) {
+        flex-direction: column;
+      }
+      .education-card:nth-child(1) img {
+        width: 40px;
+      }
+      .education-card:nth-child(1) h2 {
+        width: 290px;
+        @media (max-width: 1100px) {
+          max-width: 90%;
+          flex: unset;
+          border-radius: 0;
+          width: unset;
+        }
+      }
+      .education-card:nth-child(2) img {
+        width: 40px;
+      }
+      .education-card:nth-child(2) h2 {
+        width: 130px;
+        @media (max-width: 1100px) {
+          width: unset;
+        }
+      }
+      .education-card:nth-child(3) img {
+        width: 40px;
+      }
+      .education-card:nth-child(3) h2 {
+        width: 150px;
+        @media (max-width: 1100px) {
+          width: unset;
+        }
+      }
+      .education-card {
+        max-width: 365px;
+        background-color: @secundaryBackgroundColor;
+        padding: 32px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+        gap: 24px;
+        @media (max-width: 1100px) {
+          max-width: 100%;
+          padding: 32px 0;
+        }
+      }
+      h2 {
+        color: @primaryTextColor;
+        font-size: @subtitleFontSize;
+        margin: 0;
+        line-height: 1.5;
+      }
+      p {
+        color: @normalTextColor;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      button {
+        .secondaryButtonMixin();
+      }
+    }
+  }
+}

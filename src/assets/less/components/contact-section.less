@@ -1,0 +1,80 @@
+@import "../main/main.less";
+
+.contact-section {
+  background-color: @secundaryBackgroundColor;
+  padding: 100px 16px;
+
+  .contact-content {
+    .flex-container();
+    flex-direction: column;
+    gap: 60px;
+    .heading {
+      h1 {
+        color: @primaryTextColor;
+        span {
+          color: @secundaryTextColor;
+        }
+      }
+      p {
+        color: @normalTextColor;
+      }
+    }
+    .info-section {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      @media (max-width: 800px) {
+        gap: 15px;
+      }
+      @media (max-width: 600px) {
+        flex-direction: column-reverse;
+        gap: 50px;
+      }
+
+      .personal-information {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 16px;
+        p {
+          color: @primaryTextColor;
+          margin: 0;
+          @media (max-width: 480px) {
+            word-wrap: break-word;
+          }
+
+          span {
+            color: @secundaryTextColor;
+          }
+        }
+      }
+      .form {
+        flex: 1;
+        .form-form {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          input,
+          textarea {
+            background-color: @primaryBackgroundColor;
+            border: 0 solid;
+            color: @primaryTextColor;
+            padding: 5px;
+          }
+          input {
+            height: 67px;
+          }
+
+          textarea {
+            height: 166px;
+          }
+
+          button {
+            .buttonMixin();
+          }
+        }
+      }
+    }
+  }
+}

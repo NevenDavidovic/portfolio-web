@@ -1,0 +1,92 @@
+.normalTextmixin {
+  color: #6b7280;
+  font-size: 16px;
+}
+.contact-section {
+  background-color: #111827;
+  padding: 100px 16px;
+}
+.contact-section .contact-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.contact-section .contact-content .heading h1 {
+  color: whitesmoke;
+}
+.contact-section .contact-content .heading h1 span {
+  color: #facc15;
+}
+.contact-section .contact-content .heading p {
+  color: #6b7280;
+}
+.contact-section .contact-content .info-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .contact-section .contact-content .info-section {
+    gap: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-section .contact-content .info-section {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
+.contact-section .contact-content .info-section .personal-information {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 16px;
+}
+.contact-section .contact-content .info-section .personal-information p {
+  color: whitesmoke;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .contact-section .contact-content .info-section .personal-information p {
+    word-wrap: break-word;
+  }
+}
+.contact-section .contact-content .info-section .personal-information p span {
+  color: #facc15;
+}
+.contact-section .contact-content .info-section .form {
+  flex: 1;
+}
+.contact-section .contact-content .info-section .form .form-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contact-section .contact-content .info-section .form .form-form input,
+.contact-section .contact-content .info-section .form .form-form textarea {
+  background-color: #020617;
+  border: 0 solid;
+  color: whitesmoke;
+  padding: 5px;
+}
+.contact-section .contact-content .info-section .form .form-form input {
+  height: 67px;
+}
+.contact-section .contact-content .info-section .form .form-form textarea {
+  height: 166px;
+}
+.contact-section .contact-content .info-section .form .form-form button {
+  background-color: #facc15;
+  padding: 16px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 0 solid;
+  cursor: pointer;
+}

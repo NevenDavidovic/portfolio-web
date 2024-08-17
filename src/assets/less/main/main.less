@@ -1,0 +1,50 @@
+// Color Variables
+@primaryBackgroundColor: #020617;
+@secundaryBackgroundColor: #111827;
+@primaryTextColor: whitesmoke;
+@secundaryTextColor: #facc15;
+@navTextColor: #9ca3af;
+@normalTextColor: #6b7280;
+
+// Font Variables
+@titleFontSize: 42px;
+@subtitleFontSize: 26px;
+@normalTextFontSize: 16px;
+
+// Mixins
+.flex-container() {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.normalTextmixin {
+  color: @normalTextColor;
+  font-size: @normalTextFontSize;
+}
+
+.buttonMixin() {
+  background-color: @secundaryTextColor;
+  padding: 16px 20px;
+  font-size: @normalTextFontSize;
+  border-radius: 4px;
+  border: 0 solid;
+  cursor: pointer;
+}
+
+.secondaryButtonMixin() {
+  background-color: transparent;
+  padding: 16px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  /* border: 0 solid; */
+  cursor: pointer;
+  border: 1px solid #facc15;
+  color: #facc15;
+}
+
+// line height

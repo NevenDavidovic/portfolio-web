@@ -1,0 +1,60 @@
+@import "../main/main.less";
+
+.portfolio-section {
+  padding: 100px 16px;
+  background-color: @primaryBackgroundColor;
+
+  .portfolio-section-content {
+    .flex-container();
+    background-color: #020617;
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .heading-description {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          color: @primaryTextColor;
+          font-size: @titleFontSize;
+          span {
+            color: @secundaryTextColor;
+          }
+        }
+        p {
+          color: @normalTextColor;
+        }
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 31px;
+        .grid-item {
+          a {
+            width: 256px;
+            height: 268px;
+            cursor: pointer;
+          }
+          img {
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+        .grid-item:first-child {
+          a {
+            width: 540px;
+            height: 565px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+      }
+    }
+  }
+}

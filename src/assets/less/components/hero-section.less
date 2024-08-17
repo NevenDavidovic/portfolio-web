@@ -1,0 +1,48 @@
+@import "../main/main.less";
+
+h1,
+h2,
+h3,
+p,
+span {
+  line-height: 1.4;
+}
+
+.hero-section {
+  background-color: @secundaryBackgroundColor;
+  padding: 50px 16px 0 16px;
+  @media (max-width: 800px) {
+    padding: 100px 16px 0 16px;
+  }
+
+  .hero-content {
+    .flex-container();
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+    .text-content {
+      color: @primaryTextColor;
+      text-align: left;
+      h1 {
+        font-size: @titleFontSize;
+      }
+      p {
+        .normalTextmixin();
+      }
+      span {
+        font-size: @normalTextFontSize;
+        color: @secundaryTextColor;
+      }
+      button {
+        .buttonMixin();
+      }
+    }
+    .image-content {
+      img {
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
