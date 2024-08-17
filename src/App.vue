@@ -1,6 +1,6 @@
 <template>
   <NavbarHome />
-  <HeroSection id="hero" data-aos="fade-up" data-aos-duration="1500" />
+  <HeroSection id="hero" />
   <EducationSection id="education" />
   <ExperienceSection id="experience" />
   <PortfolioSection id="portfolio" />
