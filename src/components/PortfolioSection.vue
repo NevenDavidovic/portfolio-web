@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       description:
-        "Here you can check some of my projects that I created. Hope you like it!",
+        "Here are some of the projects I've created. I hope you enjoy them!",
       kiwiGoImage: require("@/assets/images/KIWI-GO.png"),
       bilifyImage: require("@/assets/images/bilify.png"),
       kiwiSparkImage: require("@/assets/images/KIWI-Spark.png"),

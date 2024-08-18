@@ -28,9 +28,6 @@ export default {
     ContactInformation,
     ExperienceModal,
   },
-  mounted() {
-    AOS.refresh(); // Refresh AOS after component mount
-  },
 };
 </script>
 

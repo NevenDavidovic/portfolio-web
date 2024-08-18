@@ -34,7 +34,7 @@ export default {
         zvu: {
           title: "Bachelor of Radiologic Technology",
           university: "University of Zagreb",
-          institution: "Health Aplied Sciences",
+          institution: "Health Applied Sciences",
           timeStudying: "2010-2013",
           image: require("@/assets/images/zvu-logo.png"),
         },
@@ -54,7 +54,7 @@ export default {
         },
       },
       description:
-        "Thrugh my education I have learned everything that got me to this point of time.",
+        "Through my education, I have gained the knowledge and skills that have brought me to this point in time.",
     };
   },
 };

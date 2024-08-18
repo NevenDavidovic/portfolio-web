@@ -4,8 +4,10 @@
       <div class="heading">
         <h1>Contact <span>Me</span></h1>
         <p>
-          There are many variations of passages ofLorem Ipsumavailable, but the
-          majority havesuffered alteration in some form, by injected humour,
+          Whether you have questions, feedback, or simply want to connect, I'd
+          love to hear from you! Feel free to reach out through the contact form
+          or the details below. Let's start a conversation and explore how we
+          can work together.
         </p>
       </div>
       <div class="info-section">
