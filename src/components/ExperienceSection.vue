@@ -135,7 +135,12 @@ export default {
   },
   methods: {
     openModal(item) {
-      EventBus.emit("show-experience-modal", item); // Correct method name
+      const experienceData = {
+        ...item,
+        skills: item.skills || [], // Default to an empty array if undefined
+        responsibilities: item.responsibilities || [], // Default to an empty array if undefined
+      };
+      EventBus.emit("show-experience-modal", experienceData);
     },
   },
 };

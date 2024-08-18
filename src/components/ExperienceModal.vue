@@ -31,11 +31,11 @@
         </div>
 
         <!-- Responsibilities -->
-        <div v-if="companyObject.responsabilities.length">
+        <div v-if="companyObject.responsibilities.length">
           <h4>Responsibilities:</h4>
           <ul class="responsability-list">
             <li
-              v-for="responsibility in companyObject.responsabilities"
+              v-for="responsibility in companyObject.responsibilities"
               :key="responsibility"
             >
               {{ responsibility }}
@@ -74,7 +74,11 @@ export default {
   },
   methods: {
     showModal(experienceData) {
-      this.companyObject = experienceData;
+      this.companyObject = {
+        ...experienceData,
+        skills: experienceData.skills || [], // Ensure it's an array
+        responsibilities: experienceData.responsabilities || [], // Ensure it's an array
+      };
       this.isVisible = true;
     },
     closeModal() {
