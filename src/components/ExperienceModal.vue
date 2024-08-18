@@ -65,7 +65,7 @@ export default {
         website: "",
         image: "",
         skills: [],
-        responsabilities: [],
+        responsibilities: [],
       },
     };
   },
@@ -77,7 +77,7 @@ export default {
       this.companyObject = {
         ...experienceData,
         skills: experienceData.skills || [], // Ensure it's an array
-        responsibilities: experienceData.responsabilities || [], // Ensure it's an array
+        responsibilities: experienceData.responsibilities || [], // Ensure it's an array
       };
       this.isVisible = true;
     },
