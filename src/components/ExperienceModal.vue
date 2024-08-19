@@ -9,9 +9,7 @@
           class="company-logo"
         />
         <h2>{{ companyObject.company }}</h2>
-        <p v-if="companyObject.website">
-          <a :href="companyObject.website" target="_blank">Visit Website</a>
-        </p>
+        
       </div>
       <!-- Company Website -->
 
