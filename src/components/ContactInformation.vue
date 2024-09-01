@@ -19,25 +19,25 @@
 
           <p>
             <span>Phone: </span><br />
-            <a href="tel:{{ personalInformation.phone }}">{{
+            <a :href="'tel:' + personalInformation.phone">{{
               personalInformation.phone
             }}</a>
           </p>
           <p>
             <span>Email: </span><br />
-            <a href="mailto:{{ personalInformation.e_mail }}">{{
+            <a :href="'mailto:' + personalInformation.e_mail">{{
               personalInformation.e_mail
             }}</a>
           </p>
           <p>
             <span>GitHub: </span><br />
-            <a href="{{ personalInformation.github }}" target="_blank">{{
+            <a :href="personalInformation.github" target="_blank">{{
               personalInformation.github
             }}</a>
           </p>
           <p>
             <span>LinkedIn: </span><br />
-            <a href="{{ personalInformation.linkedIn }}" target="_blank">{{
+            <a :href="personalInformation.linkedIn" target="_blank">{{
               personalInformation.linkedIn
             }}</a>
           </p>
