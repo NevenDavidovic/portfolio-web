@@ -61,4 +61,5 @@
 .portfolio-section .portfolio-section-content .heading .grid .grid-item:first-child img {
   width: 100%;
   height: 100%;
+  border-radius: 0;
 }

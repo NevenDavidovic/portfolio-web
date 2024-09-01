@@ -61,6 +61,13 @@
 .contact-section .contact-content .info-section .personal-information p span {
   color: #facc15;
 }
+.contact-section .contact-content .info-section .personal-information p a {
+  text-decoration: none;
+  color: white;
+}
+.contact-section .contact-content .info-section .personal-information p a:hover {
+  text-decoration: underline;
+}
 .contact-section .contact-content .info-section .form {
   flex: 1;
 }
@@ -68,6 +75,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.contact-section .contact-content .info-section .form .form-form label {
+  text-align: left;
+  color: whitesmoke;
 }
 .contact-section .contact-content .info-section .form .form-form input,
 .contact-section .contact-content .info-section .form .form-form textarea {

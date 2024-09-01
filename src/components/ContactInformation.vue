@@ -16,39 +16,48 @@
             <span>Address: </span> <br />
             {{ personalInformation.address }}
           </p>
+
           <p>
-            <span>Phone: </span> <br />
-            {{ personalInformation.phone }}
+            <span>Phone: </span><br />
+            <a href="tel:{{ personalInformation.phone }}">{{
+              personalInformation.phone
+            }}</a>
           </p>
           <p>
-            <span>Email: </span> <br />
-            {{ personalInformation.e_mail }}
+            <span>Email: </span><br />
+            <a href="mailto:{{ personalInformation.e_mail }}">{{
+              personalInformation.e_mail
+            }}</a>
           </p>
           <p>
-            <span>GitHub: </span> <br />
-            {{ personalInformation.github }}
+            <span>GitHub: </span><br />
+            <a href="{{ personalInformation.github }}" target="_blank">{{
+              personalInformation.github
+            }}</a>
           </p>
           <p>
-            <span>LinkedIn: </span> <br />
-            {{ personalInformation.linkedIn }}
+            <span>LinkedIn: </span><br />
+            <a href="{{ personalInformation.linkedIn }}" target="_blank">{{
+              personalInformation.linkedIn
+            }}</a>
           </p>
         </div>
 
         <div class="form">
           <form class="form-form" @submit.prevent="submitForm">
             <input type="hidden" name="access_key" :value="accessKey" />
+            <label for="email">Email:</label>
             <input
               type="email"
               name="email"
               required
-              placeholder="E-mail"
               v-model="formData.email"
             />
+            <label for="email">Message:</label>
             <textarea
               type="textarea"
               name="message"
               required
-              placeholder="Message"
               v-model="formData.message"
             />
             <input
@@ -57,7 +66,7 @@
               v-model="formData.botcheck"
               style="display: none"
             />
-            <button type="submit">Contact me</button>
+            <button type="submit">Submit message</button>
           </form>
         </div>
       </div>
