@@ -49,7 +49,7 @@ export default {
         kiwiGoProject: "https://www.kiwivapor.com/it/kiwi-go-plus",
         kiwiStore: "https://www.kiwivapor.com/it/klocator/index/index",
         bilifyProject: "https://github.com/NevenDavidovic/Billify",
-        batanaProject: "https://github.com/NevenDavidovic/vue_batana",
+        batanaProject: "https://cvjecarnica-melani.vercel.app/",
       },
     };
   },
