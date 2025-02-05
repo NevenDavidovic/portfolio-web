@@ -8,21 +8,21 @@
         </div>
 
         <div class="grid">
-          <a :href="link.kiwiSparkProject" target="_blank" class="grid-item"
-            ><img :src="kiwiSparkImage" alt=""
-          /></a>
-          <a :href="link.batanaProject" target="_blank" class="grid-item"
-            ><img :src="batanaImage" alt=""
-          /></a>
-          <a :href="link.kiwiGoProject" target="_blank" class="grid-item"
-            ><img :src="kiwiGoImage" alt=""
-          /></a>
-          <a :href="link.bilifyProject" target="_blank" class="grid-item"
-            ><img :src="bilifyImage" alt=""
-          /></a>
-          <a :href="link.kiwiStore" target="_blank" class="grid-item"
-            ><img :src="kiwiStoreImage" alt=""
-          /></a>
+          <a :href="link.kiwiSparkProject" target="_blank" class="grid-item">
+            <img :src="kiwiSparkImage" alt="" />
+          </a>
+          <a :href="link.batanaProject" target="_blank" class="grid-item">
+            <img :src="batanaImage" alt="" />
+          </a>
+          <a :href="link.kiwiGoProject" target="_blank" class="grid-item">
+            <img :src="kiwiGoImage" alt="" />
+          </a>
+          <a :href="link.bilifyProject" target="_blank" class="grid-item">
+            <img :src="bilifyImage" alt="" />
+          </a>
+          <a :href="link.kiwiStore" target="_blank" class="grid-item">
+            <img :src="kiwiStoreImage" alt="" />
+          </a>
         </div>
       </div>
     </div>
@@ -52,6 +52,16 @@ export default {
         batanaProject: "https://cvjecarnica-melani.vercel.app/",
       },
     };
+  },
+  mounted() {
+    // Kad se komponenta učita, zabilježimo prikaz stranice u GA
+    if (typeof gtag === "function") {
+      gtag("event", "page_view", {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: window.location.pathname,
+      });
+    }
   },
 };
 </script>
