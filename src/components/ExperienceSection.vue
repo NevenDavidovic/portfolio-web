@@ -43,7 +43,7 @@ export default {
         buje: {
           title: "Frontend Developer",
           company: "Vapour International d.o.o.",
-          timeWorking: "2023-present",
+          timeWorking: "2023-2025",
           website: "https://www.kiwivapor.com/",
           image: require("@/assets/images/kiwi-vapor.jpg"),
           skills: [
@@ -52,13 +52,14 @@ export default {
             "jQuery",
             "LESS CSS",
             "Tailwind CSS",
-            "Knockout.js",
-            "Python",
+            "Figma",
+            "Vue.js",
           ],
           responsibilities: [
             "Working in a CMS environment, specifically Magento 2, where I've been involved in changing the design of modules and implementing new functionalities.",
             "Using PHP, Vanilla JavaScript, jQuery, LESS CSS, and Tailwind CSS to implement the designs from the design department.",
             "Working in Figma to design web pages.",
+            "Using Vue.js.",
             "Helping to deploy projects in a production environment.",
             "Updating multiple company pages upon requests from the marketing department in various languages, ensuring consistency and accuracy across all platforms.",
             "Skilled in using versioning systems to manage code efficiently.",

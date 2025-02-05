@@ -9,7 +9,6 @@
           class="company-logo"
         />
         <h2>{{ companyObject.company }}</h2>
-        
       </div>
       <!-- Company Website -->
 
@@ -68,14 +67,14 @@ export default {
     };
   },
   created() {
-    EventBus.on("show-experience-modal", this.showModal); // Listen for the event
+    EventBus.on("show-experience-modal", this.showModal);
   },
   methods: {
     showModal(experienceData) {
       this.companyObject = {
         ...experienceData,
-        skills: experienceData.skills || [], // Ensure it's an array
-        responsibilities: experienceData.responsibilities || [], // Ensure it's an array
+        skills: experienceData.skills || [],
+        responsibilities: experienceData.responsibilities || [],
       };
       this.isVisible = true;
     },
@@ -84,7 +83,7 @@ export default {
     },
   },
   beforeUnmount() {
-    EventBus.off("show-experience-modal", this.showModal); // Clean up the event listener
+    EventBus.off("show-experience-modal", this.showModal);
   },
 };
 </script>
