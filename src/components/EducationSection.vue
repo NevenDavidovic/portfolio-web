@@ -1,14 +1,17 @@
 <template>
-  <div id="education-section" class="education-section">
+  <div id="education-section" class="education-section" ref="educationSection">
     <div class="education-content">
       <div class="education-desc">
         <h1>My <span>Education</span></h1>
-        <p>
-          {{ description }}
-        </p>
+        <p>{{ description }}</p>
       </div>
       <div class="education-cards">
-        <div class="education-card" v-for="(item, key) in education" :key="key">
+        <div
+          class="education-card"
+          v-for="(item, key) in education"
+          :key="key"
+          :class="{ 'animate-card': isVisible }"
+        >
           <img :src="item.image" alt="Education Image" />
           <h2>{{ item.title }}</h2>
           <p>
@@ -25,11 +28,9 @@
 <script>
 export default {
   name: "EducationSection",
-  props: {
-    msg: String,
-  },
   data() {
     return {
+      isVisible: false,
       education: {
         zvu: {
           title: "Bachelor of Radiologic Technology",
@@ -56,6 +57,29 @@ export default {
       description:
         "Through my education, I have gained the knowledge and skills that have brought me to this point in time.",
     };
+  },
+  mounted() {
+    this.observeSection();
+  },
+  methods: {
+    observeSection() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.isVisible = true;
+              entry.target.classList.add("animate-in");
+              observer.unobserve(entry.target); // Stop observing after animation triggers
+            }
+          });
+        },
+        { threshold: 0.2 } // Trigger animation when 20% of the section is visible
+      );
+
+      if (this.$refs.educationSection) {
+        observer.observe(this.$refs.educationSection);
+      }
+    },
   },
 };
 </script>
