@@ -59,5 +59,3 @@ export default {
   },
 };
 </script>
-
-<style src="@/assets/less/components/education-section.css"></style>

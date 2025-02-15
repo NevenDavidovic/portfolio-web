@@ -4,14 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "less:watch": "less-watch-compiler src/assets/less src/assets/css main.less style.css"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "core-js": "^3.8.3",
     "css-loader": "^7.1.2",
-    "less": "^4.2.0",
-    "less-loader": "^12.2.0",
     "mitt": "^3.0.1",
     "papaparse": "^5.4.1",
     "style-loader": "^4.0.0",
@@ -23,6 +21,8 @@
     "@types/papaparse": "^5.3.14",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "less": "^4.2.2",
+    "less-loader": "^12.2.0",
     "mini-css-extract-plugin": "^2.9.0"
   }
 }

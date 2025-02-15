@@ -87,5 +87,3 @@ export default {
   },
 };
 </script>
-
-<style src="@/assets/less/modals/experience-modal.css"></style>

@@ -162,5 +162,3 @@ export default {
   },
 };
 </script>
-
-<style src="@/assets/less/components/navbar.css"></style>

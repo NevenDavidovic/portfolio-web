@@ -139,5 +139,3 @@ export default {
   },
 };
 </script>
-
-<style src="@/assets/less/components/contact-section.css"></style>

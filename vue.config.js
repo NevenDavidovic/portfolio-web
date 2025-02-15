@@ -5,12 +5,9 @@ module.exports = defineConfig({
   css: {
     loaderOptions: {
       less: {
-        // Options for less-loader can be added here
+        additionalData: `@import "@/assets/less/main.less";`,
         lessOptions: {
-          // Example: Enable JavaScript in Less files
           javascriptEnabled: true,
-
-          // Example: Custom global Less variables
         },
       },
     },

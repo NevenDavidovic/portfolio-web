@@ -38,5 +38,3 @@ export default {
   },
 };
 </script>
-
-<style src="@/assets/less/components/hero-section.css"></style>
