@@ -2,16 +2,16 @@
   <div id="hero-section" class="hero-section">
     <div class="hero-content">
       <div class="text-content">
-        <span>Hello and Welcome</span>
-        <h1>I am Neven Davidović</h1>
-        <p>
+        <span class="fade-in">Hello and Welcome</span>
+        <h1 class="slide-in">I am Neven Davidović</h1>
+        <p class="fade-in-delay">
           I want to become a developer that can bend his world to his will, with
           his code to spawn the mightiest of apps.
         </p>
         <button @click="scrollToContact">Contact me</button>
       </div>
       <div class="image-content">
-        <img :src="heroImage" alt="HeroImage" />
+        <img :src="heroImage" alt="HeroImage" class="float-in" />
       </div>
     </div>
   </div>
