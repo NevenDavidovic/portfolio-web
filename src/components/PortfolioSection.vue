@@ -45,7 +45,7 @@ export default {
       kiwiStoreImage: require("@/assets/images/KIWI-store.png"),
       batanaImage: require("@/assets/images/batana.png"),
       link: {
-        kiwiSparkProject: "https://www.kiwivapor.com/it/kiwi-spark",
+        kiwiSparkProject: "https://www.kiwivapor.com/it/kiwi-giftbox",
         kiwiGoProject: "https://www.kiwivapor.com/it/kiwi-go-plus",
         kiwiStore: "https://www.kiwivapor.com/it/klocator/index/index",
         bilifyProject: "https://github.com/NevenDavidovic/Billify",
