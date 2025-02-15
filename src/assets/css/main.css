@@ -625,7 +625,7 @@ span {
   transition: all 0.3s ease;
 }
 .exp-modal-section .modal-content::-webkit-scrollbar-thumb:hover {
-  background: #ffd700;
+  background: #facc15;
 }
 .exp-modal-section .modal-header {
   display: flex;
@@ -709,7 +709,7 @@ span {
   margin-right: auto;
 }
 .exp-modal-section button:hover {
-  background-color: #ffd700;
+  background-color: #facc15;
   transform: translateY(-3px);
 }
 .exp-modal-section .close-button {
