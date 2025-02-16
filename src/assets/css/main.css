@@ -97,17 +97,10 @@
   border: 0 solid;
   cursor: pointer;
 }
-.education-section.animate-in {
-  opacity: 1;
-  transform: translateY(0);
-}
 .education-section {
   background-color: #020617;
   margin: 0;
   padding: 100px 16px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .education-section .education-content {
   max-width: 1100px;
@@ -152,7 +145,7 @@
   }
 }
 .education-section .education-content .education-cards .education-card:nth-child(1) {
-  transition-delay: 0.2s;
+  transition-delay: 1s;
 }
 .education-section .education-content .education-cards .education-card:nth-child(1) img {
   width: 40px;
@@ -169,7 +162,7 @@
   }
 }
 .education-section .education-content .education-cards .education-card:nth-child(2) {
-  transition-delay: 0.4s;
+  transition-delay: 2s;
 }
 .education-section .education-content .education-cards .education-card:nth-child(2) img {
   width: 40px;
@@ -183,7 +176,7 @@
   }
 }
 .education-section .education-content .education-cards .education-card:nth-child(3) {
-  transition-delay: 0.6s;
+  transition-delay: 3s;
 }
 .education-section .education-content .education-cards .education-card:nth-child(3) img {
   width: 40px;
@@ -212,8 +205,8 @@
   border-radius: 12px;
   gap: 24px;
   opacity: 0;
-  transform: translateY(30px) scale(0.95) rotateX(10deg);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(50px) scale(0.95) rotateX(10deg);
+  transition: opacity 2s ease-out, transform 2s ease-out;
 }
 @media (max-width: 1100px) {
   .education-section .education-content .education-cards .education-card {
@@ -426,6 +419,9 @@ span {
   animation: pulse 2s infinite 2s;
   transition: all 0.3s;
 }
+.hero-section .hero-content .image-content {
+  display: flex;
+}
 @media (max-width: 480px) {
   .hero-section .hero-content .image-content img {
     width: 100%;
@@ -552,10 +548,14 @@ span {
   grid-template-rows: 1fr 1fr;
   gap: 31px;
 }
-.portfolio-section .portfolio-section-content .heading .grid .grid-item a {
-  width: 256px;
-  height: 268px;
-  cursor: pointer;
+@media (max-width: 1024px) {
+  .portfolio-section .portfolio-section-content .heading .grid {
+    gap: 12px;
+  }
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item {
+  position: relative;
+  overflow: hidden;
 }
 .portfolio-section .portfolio-section-content .heading .grid .grid-item img {
   width: 100%;
@@ -563,8 +563,67 @@ span {
   cursor: pointer;
   transition: all ease-in-out 0.5s;
 }
-.portfolio-section .portfolio-section-content .heading .grid .grid-item img:hover {
+.portfolio-section .portfolio-section-content .heading .grid .grid-item .options {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 101%;
+  transition: all ease-in-out 0.5s;
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item .options i {
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item .options i:nth-child(1) {
+  margin-right: -12px;
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item .options i:nth-child(2) {
+  margin-left: -12px;
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item:not(:hover) {
+  transition: all ease-in-out 0.5s;
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item:hover {
+  transition: all ease-in-out 0.5s;
   transform: scale(105%);
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item:hover .options {
+  gap: 18px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all ease-in-out 0.5s;
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .portfolio-section .portfolio-section-content .heading .grid .grid-item:hover .options {
+    gap: 10px;
+  }
+}
+.portfolio-section .portfolio-section-content .heading .grid .grid-item:hover .options i {
+  font-size: 2rem;
+  color: white;
+  margin-left: unset;
+  margin-right: unset;
+  transition: all ease-in-out 0.5s;
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .portfolio-section .portfolio-section-content .heading .grid .grid-item:hover .options i {
+    font-size: 1rem;
+  }
 }
 .portfolio-section .portfolio-section-content .heading .grid .grid-item:first-child {
   grid-column: span 2;
@@ -572,7 +631,7 @@ span {
 }
 .portfolio-section .portfolio-section-content .heading .grid .grid-item:first-child img {
   width: 100%;
-  height: 102%;
+  height: 101%;
   border-radius: 0;
 }
 .normalTextmixin {

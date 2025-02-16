@@ -31,26 +31,85 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 31px;
+        @media (max-width: 1024px) {
+          gap: 12px;
+        }
         .grid-item {
-          a {
-            width: 256px;
-            height: 268px;
-            cursor: pointer;
-          }
+          position: relative;
+          overflow: hidden;
+
           img {
             width: 100%;
             height: 100%;
             cursor: pointer;
             transition: all ease-in-out 0.5s;
-            &:hover {
-              transform: scale(105%);
+          }
+          .options {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            height: 101%;
+
+            transition: all ease-in-out 0.5s;
+            i {
+              font-size: 1.5rem;
+              color: white;
+              opacity: 0;
+              cursor: pointer;
+            }
+            i:nth-child(1) {
+              margin-right: -12px;
+            }
+            i:nth-child(2) {
+              margin-left: -12px;
+            }
+          }
+          &:not(:hover) {
+            transition: all ease-in-out 0.5s;
+          }
+          &:hover {
+            transition: all ease-in-out 0.5s;
+            transform: scale(105%);
+            .options {
+              gap: 18px;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: rgba(0, 0, 0, 0.7);
+              transition: all ease-in-out 0.5s;
+              opacity: 1;
+              @media (max-width: 600px) {
+                gap: 10px;
+              }
+
+              i {
+                font-size: 2rem;
+                color: white;
+                margin-left: unset;
+                margin-right: unset;
+                transition: all ease-in-out 0.5s;
+                opacity: 1;
+                @media (max-width: 600px) {
+                  font-size: 1rem;
+                }
+              }
             }
           }
         }
+
         .grid-item:first-child {
           img {
             width: 100%;
-            height: 102%;
+            height: 101%;
             border-radius: 0;
           }
           grid-column: span 2;

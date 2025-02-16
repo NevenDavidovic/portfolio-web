@@ -8,21 +8,56 @@
         </div>
 
         <div class="grid">
-          <a :href="link.kiwiSparkProject" target="_blank" class="grid-item">
-            <img :src="kiwiSparkImage" alt="" />
-          </a>
-          <a :href="link.batanaProject" target="_blank" class="grid-item">
+          <div class="grid-item">
+            <img :src="kiwiSparkImage" alt="KIWI Giftbox" />
+            <div class="options">
+              <!-- <a :href="link.kiwiSparkGithub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a> -->
+              <a :href="link.kiwiSparkProject" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-item">
             <img :src="batanaImage" alt="" />
-          </a>
-          <a :href="link.kiwiGoProject" target="_blank" class="grid-item">
+            <div class="options">
+              <a :href="link.batanaGithub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a :href="link.batanaProject" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-item">
             <img :src="kiwiGoImage" alt="" />
-          </a>
-          <a :href="link.bilifyProject" target="_blank" class="grid-item">
+            <div class="options">
+              <a :href="link.kiwiGoProject" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-item">
             <img :src="bilifyImage" alt="" />
-          </a>
-          <a :href="link.kiwiStore" target="_blank" class="grid-item">
+            <div class="options">
+              <a :href="link.bilifyGithub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-item">
             <img :src="kiwiStoreImage" alt="" />
-          </a>
+            <div class="options">
+              <a :href="link.kiwiStore" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -48,7 +83,9 @@ export default {
         kiwiSparkProject: "https://www.kiwivapor.com/it/kiwi-giftbox",
         kiwiGoProject: "https://www.kiwivapor.com/it/kiwi-go-plus",
         kiwiStore: "https://www.kiwivapor.com/it/klocator/index/index",
-        bilifyProject: "https://github.com/NevenDavidovic/Billify",
+        bilifyGithub:
+          "https://github.com/NevenDavidovic/generator_uplatnica_dnd",
+        batanaGithub: "https://github.com/NevenDavidovic/cvjecarnica-melani",
         batanaProject:
           "https://cvjecarnica-melani.vercel.app/cvjecarnica-melani",
       },
