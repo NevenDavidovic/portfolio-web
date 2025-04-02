@@ -11,9 +11,7 @@
           <div class="grid-item">
             <img :src="kiwiSparkImage" alt="KIWI Giftbox" />
             <div class="options">
-              <!-- <a :href="link.kiwiSparkGithub" target="_blank">
-                <i class="fab fa-github"></i>
-              </a> -->
+              
               <a :href="link.kiwiSparkProject" target="_blank">
                 <i class="fas fa-external-link-alt"></i>
               </a>
@@ -92,7 +90,7 @@ export default {
     };
   },
   mounted() {
-    // Kad se komponenta učita, zabilježimo prikaz stranice u GA
+    
     if (typeof gtag === "function") {
       gtag("event", "page_view", {
         page_title: document.title,

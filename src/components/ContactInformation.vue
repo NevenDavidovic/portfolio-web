@@ -93,7 +93,7 @@ export default {
       formData: {
         email: "",
         message: "",
-        botcheck: false, // This is the honeypot field
+        botcheck: false, 
       },
     };
   },
@@ -113,7 +113,7 @@ export default {
       }
 
       try {
-        // Add access_key to formData
+       
         const payload = {
           ...this.formData,
           access_key: this.accessKey,

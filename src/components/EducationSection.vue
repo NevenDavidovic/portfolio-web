@@ -69,11 +69,11 @@ export default {
             if (entry.isIntersecting) {
               this.isVisible = true;
               entry.target.classList.add("animate-in");
-              observer.unobserve(entry.target); // Stop observing after animation triggers
+              observer.unobserve(entry.target); 
             }
           });
         },
-        { threshold: 0.2 } // Trigger animation when 20% of the section is visible
+        { threshold: 0.2 } 
       );
 
       if (this.$refs.educationSection) {

@@ -2,7 +2,7 @@
   <div class="navbar-component">
     <div class="navbar">
       <div class="logo">
-        <!-- SVG Logo -->
+        
         <svg
           width="115"
           height="19"
