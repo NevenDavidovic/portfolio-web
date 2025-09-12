@@ -34,7 +34,7 @@
             <img :src="kiwiGoImage" alt="" />
             <div class="options">
               <a :href="link.kiwiGoProject" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
+                <i class="fab fa-github"></i>
               </a>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default {
       batanaImage: require("@/assets/images/batana.png"),
       link: {
         kiwiSparkProject: "https://www.kiwivapor.com/it/kiwi-giftbox",
-        kiwiGoProject: "https://www.kiwivapor.com/it/kiwi-go-plus",
+        kiwiGoProject: "https://github.com/NevenDavidovic/SmallBusinessBuddy-CRM/tree/main",
         kiwiStore: "https://www.kiwivapor.com/it/klocator/index/index",
         bilifyGithub:
           "https://github.com/NevenDavidovic/generator_uplatnica_dnd",
