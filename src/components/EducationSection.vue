@@ -50,7 +50,7 @@ export default {
           title: "Bachelor of Informatics",
           university: "University of Pula",
           institution: "Faculty of Informatics",
-          timeStudying: "2021-present",
+          timeStudying: "2021-2025",
           image: require("@/assets/images/fipu-logo.png"),
         },
       },
