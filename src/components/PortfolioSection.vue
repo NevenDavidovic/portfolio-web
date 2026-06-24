@@ -24,9 +24,9 @@
               <a :href="link.batanaGithub" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
-              <a :href="link.batanaProject" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
+                <a :href="link.batanaProject" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
           </div>
 
@@ -44,6 +44,10 @@
             <div class="options">
               <a :href="link.bilifyGithub" target="_blank">
                 <i class="fab fa-github"></i>
+              </a>
+
+              <a :href="link.dndLinkWeb" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
           </div>
@@ -78,7 +82,8 @@ export default {
       kiwiStoreImage: require("@/assets/images/KIWI-store.png"),
       batanaImage: require("@/assets/images/batana.png"),
       link: {
-        kiwiSparkProject: "https://www.kiwivapor.com/it/kiwi-giftbox",
+        dndLinkWeb:"https://generator-uplatnica-dnd.vercel.app/",
+        kiwiSparkProject: "https://www.kiwivapor.com/it/it/kiwi-spark",
         kiwiGoProject: "https://github.com/NevenDavidovic/SmallBusinessBuddy-CRM/tree/main",
         kiwiStore: "https://www.kiwivapor.com/it/klocator/index/index",
         bilifyGithub:

@@ -43,7 +43,7 @@
           </p>
         </div>
 
-        <div class="form">
+        <!-- <div class="form">
           <form class="form-form" @submit.prevent="submitForm">
             <input type="hidden" name="access_key" :value="accessKey" />
             <label for="email">Email:</label>
@@ -68,7 +68,7 @@
             />
             <button type="submit">Submit message</button>
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -84,7 +84,7 @@ export default {
     return {
       personalInformation: {
         address: "Ive Lole Ribara 16, Poreč",
-        e_mail: "neven4380@live.com",
+        e_mail: "nevendavidovic407@gmail.com",
         phone: "+385 99 653 1663",
         github: "https://github.com/NevenDavidovic",
         linkedIn: "https://www.linkedin.com/in/nevendavidovic/",
