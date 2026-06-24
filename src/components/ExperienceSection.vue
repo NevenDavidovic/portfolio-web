@@ -58,6 +58,11 @@ export default {
             "Support in the seamless integration of the LMS with external tools and platforms (e.g., UDEMY) and with other modules within the platform.",
             "Editing and coordination of content on the platform and collaboration with external partners.",
             "Participation in the implementation of projects for the improvement of modules (gamification, certificates) and user experience.",
+            "Collaboration with the IT department to ensure the smooth operation of the platform and its integration with other systems.",
+            "Monitoring and analyzing user activity on the platform to identify areas for improvement and optimization.",
+            "Providing support and training to users of the platform, including employees and external partners.",
+            "Staying up-to-date with the latest trends and best practices in LMS administration and e-learning to ensure the platform remains effective and relevant.",
+            "Connecting to API for the integration of the LMS with external tools and platforms.",
           ],
         },
         buje: {
