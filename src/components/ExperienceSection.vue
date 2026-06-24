@@ -40,6 +40,26 @@ export default {
   data() {
     return {
       experience: {
+        porec: {
+          title: "LMS Administrator",
+          company: "Valamar Riviera d.d.",
+          timeWorking: "2025-present  ",
+          website: "https://valamar-riviera.com/hr/naslovnica/",
+          image: require("@/assets/images/valamar-umbrella-2025@2x.png"),
+          skills: [
+            "LMS",
+            "Excell",
+            "HTML",
+            "CSS",
+            "JavaScript",
+          ],
+          responsibilities: [
+            "Participation in the maintenance, configuration, and implementation of existing and new functionalities of the LMS.",
+            "Support in the seamless integration of the LMS with external tools and platforms (e.g., UDEMY) and with other modules within the platform.",
+            "Editing and coordination of content on the platform and collaboration with external partners.",
+            "Participation in the implementation of projects for the improvement of modules (gamification, certificates) and user experience.",
+          ],
+        },
         buje: {
           title: "Frontend Developer",
           company: "Vapour International d.o.o.",
